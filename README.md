@@ -1,6 +1,6 @@
 # fishflutter
 
-> flutter 高仿咸鱼
+> :fish: flutter 高仿咸鱼
 
 - [x] 搭建架构
 ```
