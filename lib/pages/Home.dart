@@ -1,3 +1,4 @@
+import 'package:fishflutter/components/Mask.dart';
 import 'package:fishflutter/provider/Counter.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -12,7 +13,7 @@ class HomeState extends State<Home> {
   Widget build(BuildContext context) {
     final counter = Provider.of<Counter>(context);
     return Center(
-      child: Text("首页${counter.count}"),
+      child: Mask(),
     );
   }
 }
