@@ -52,6 +52,12 @@ flutter:
       -  assets/images/taobao.png
       -  assets/images/zhifubao.png
       -  assets/images/boot.png
+      -  assets/images/qiandao.png
+      -  assets/images/phone.png
+      -  assets/images/fruit.png
+      -  assets/images/package.png
+      -  assets/images/book.png
+      -  assets/images/more.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
