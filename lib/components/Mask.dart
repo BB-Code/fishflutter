@@ -1,3 +1,4 @@
+import 'package:fishflutter/utils/UISize.dart';
 import 'package:flutter/material.dart';
 
 class Mask extends StatelessWidget {
@@ -5,7 +6,9 @@ class Mask extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    UISize().init(context);
     return Container(
+        width: UISize.screenWidth,
         color: Color.fromARGB(80, 72, 72, 72),
         child: Row(
           mainAxisSize: MainAxisSize.max,

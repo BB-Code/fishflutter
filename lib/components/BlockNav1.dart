@@ -1,3 +1,6 @@
+import 'package:fishflutter/components/ImagePlaceholder.dart';
+import 'package:fishflutter/utils/HexColor.dart';
+import 'package:fishflutter/utils/UISize.dart';
 import 'package:flutter/material.dart';
 
 class BlockNav1 extends StatelessWidget {
@@ -5,13 +8,135 @@ class BlockNav1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    UISize().init(context);
     return Container(
-      child: Row(children: [
-        Column(children: [
-          Text("玩家 最懂的人最狠的货"),
-          Image.network("", fit: BoxFit.cover, width: 100, height: 100)
+      padding: EdgeInsets.only(left: 4, top: 6, right: 4, bottom: 12),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10), color: Colors.white),
+      width: UISize.screenWidth / 1.1,
+      child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+        Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Container(
+            margin: EdgeInsets.only(bottom: 6),
+            child: RichText(
+              text: TextSpan(
+                  text: "玩家",
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold),
+                  children: <TextSpan>[
+                    TextSpan(
+                        text: "  最懂的人最狠的货",
+                        style: TextStyle(color: Colors.grey, fontSize: 10))
+                  ]),
+            ),
+          ),
+          Row(children: [
+            ImagePlaceholder(radiusDirection: "L"),
+            SizedBox(
+              width: 1,
+              height: 12,
+              child: DecoratedBox(
+                decoration: BoxDecoration(color: Colors.white),
+              ),
+            ),
+            ImagePlaceholder(radiusDirection: "R"),
+          ]),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Container(
+                  margin: EdgeInsets.only(top: 4, bottom: 4),
+                  child: Text("租房",
+                      style: TextStyle(
+                          fontSize: 14, fontWeight: FontWeight.bold))),
+              SizedBox(width: 60),
+              Text("借租",
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+            ],
+          ),
+          Row(children: [
+            ImagePlaceholder(),
+            SizedBox(
+              width: 10,
+              height: 12,
+              child: DecoratedBox(
+                decoration: BoxDecoration(color: Colors.white),
+              ),
+            ),
+            ImagePlaceholder(),
+          ])
         ]),
-        Column()
+        Container(
+          padding: EdgeInsets.only(left: 10, right: 10),
+          child: SizedBox(
+            width: 1,
+            height: 220,
+            child: DecoratedBox(
+              decoration: BoxDecoration(color: HexColor("F4F4F4")),
+            ),
+          ),
+        ),
+        Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Container(
+            margin: EdgeInsets.only(bottom: 6),
+            child: RichText(
+                text: TextSpan(
+                    text: "免费送",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold),
+                    children: <TextSpan>[
+                  TextSpan(
+                      text: "  41.9万件宝贝",
+                      style: TextStyle(color: Colors.grey, fontSize: 10))
+                ])),
+          ),
+          Row(children: [
+            ImagePlaceholder(radiusDirection: "L"),
+            SizedBox(
+              width: 1,
+              height: 12,
+              child: DecoratedBox(
+                decoration: BoxDecoration(color: Colors.white),
+              ),
+            ),
+            ImagePlaceholder(radiusDirection: "R"),
+          ]),
+          Row(
+            children: [
+              Container(
+                  margin: EdgeInsets.only(top: 4, bottom: 4),
+                  child: RichText(
+                    text: TextSpan(
+                        text: "咸鱼优品",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold),
+                        children: <TextSpan>[
+                          TextSpan(
+                              text: "  二手正品好货",
+                              style:
+                                  TextStyle(color: Colors.grey, fontSize: 10))
+                        ]),
+                  )),
+            ],
+          ),
+          Row(children: [
+            ImagePlaceholder(),
+            SizedBox(
+              width: 10,
+              height: 12,
+              child: DecoratedBox(
+                decoration: BoxDecoration(color: Colors.white),
+              ),
+            ),
+            ImagePlaceholder(),
+          ])
+        ]),
       ]),
     );
   }

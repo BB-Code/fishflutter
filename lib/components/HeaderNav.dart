@@ -1,5 +1,4 @@
 import 'package:fishflutter/config/config.dart';
-import 'package:fishflutter/utils/HexColor.dart';
 import 'package:fishflutter/utils/uisize.dart';
 import 'package:flutter/material.dart';
 

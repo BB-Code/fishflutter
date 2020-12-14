@@ -1,11 +1,10 @@
+import 'package:fishflutter/components/BlockNav1.dart';
 import 'package:fishflutter/components/HeaderNav.dart';
 import 'package:fishflutter/components/Mask.dart';
 import 'package:fishflutter/config/config.dart';
-import 'package:fishflutter/provider/Counter.dart';
 import 'package:fishflutter/utils/HexColor.dart';
 import 'package:fishflutter/utils/UISize.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -15,7 +14,6 @@ class Home extends StatefulWidget {
 class HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    //final counter = Provider.of<Counter>(context);
     UISize().init(context);
     return Container(
         color: HexColor("#F2F2F2"),
@@ -109,9 +107,17 @@ class HomeState extends State<Home> {
                 top: UISize.screenHeight / 4.6,
                 child: SingleChildScrollView(
                   child: HeaderNav(),
-                ))
+                )),
+            Positioned(
+              top: UISize.screenHeight / 2.9,
+              left: UISize.screenWidth / 22,
+              child: BlockNav1(),
+            ),
             //登录遮罩
-            //Mask()
+            Positioned(
+              top: UISize.screenHeight / 1.18,
+              child: Mask(),
+            )
           ],
         ));
   }
