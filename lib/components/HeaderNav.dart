@@ -1,4 +1,5 @@
 import 'package:fishflutter/config/config.dart';
+import 'package:fishflutter/utils/HexColor.dart';
 import 'package:fishflutter/utils/uisize.dart';
 import 'package:flutter/material.dart';
 
@@ -15,24 +16,39 @@ class HeaderNav extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Column(children: [
-            Image.asset(Config.imagePrefix + "phone.png"),
-            Text("二手手机")
+            Image.asset(Config.imagePrefix + "phone.png", width: 40),
+            Text(
+              "二手手机",
+              style: TextStyle(color: HexColor("979797"), fontSize: 14),
+            )
           ]),
           Column(children: [
-            Image.asset(Config.imagePrefix + "fruit.png"),
-            Text("生鲜水果")
+            Image.asset(Config.imagePrefix + "fruit.png", width: 40),
+            Text(
+              "生鲜水果",
+              style: TextStyle(color: HexColor("979797"), fontSize: 14),
+            )
           ]),
           Column(children: [
-            Image.asset(Config.imagePrefix + "package.png"),
-            Text("奢品珠宝")
+            Image.asset(Config.imagePrefix + "package.png", width: 40),
+            Text(
+              "奢品珠宝",
+              style: TextStyle(color: HexColor("979797"), fontSize: 14),
+            )
           ]),
           Column(children: [
-            Image.asset(Config.imagePrefix + "book.png"),
-            Text("二手图书")
+            Image.asset(Config.imagePrefix + "book.png", width: 40),
+            Text(
+              "二手图书",
+              style: TextStyle(color: HexColor("979797"), fontSize: 14),
+            )
           ]),
           Column(children: [
-            Image.asset(Config.imagePrefix + "more.png"),
-            Text("分类")
+            Image.asset(Config.imagePrefix + "more.png", width: 40),
+            Text(
+              "分类",
+              style: TextStyle(color: HexColor("979797"), fontSize: 14),
+            )
           ])
         ],
       ),

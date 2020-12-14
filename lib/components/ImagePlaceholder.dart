@@ -1,8 +1,13 @@
+import 'package:fishflutter/utils/HexColor.dart';
 import 'package:flutter/material.dart';
 
 class ImagePlaceholder extends StatelessWidget {
   final String radiusDirection;
-  const ImagePlaceholder({Key key, this.radiusDirection}) : super(key: key);
+  final String bgColor;
+  final String labelTitle;
+  const ImagePlaceholder(
+      {Key key, this.radiusDirection, this.bgColor, this.labelTitle})
+      : super(key: key);
   @override
   Widget build(BuildContext context) {
     return radiusDirection == "L"
@@ -40,6 +45,23 @@ class ImagePlaceholder extends StatelessWidget {
                     image: NetworkImage("https://unsplash.it/80/80/?random"),
                   ),
                 ),
-              );
+                child: Stack(fit: StackFit.loose, children: [
+                  Positioned(
+                    top: 50,
+                    left: 4,
+                    child: Container(
+                        alignment: Alignment.center,
+                        height: 20.0,
+                        width: 66,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: HexColor(bgColor),
+                        ),
+                        child: Text(
+                          labelTitle,
+                          style: TextStyle(color: Colors.white, fontSize: 11),
+                        )),
+                  )
+                ]));
   }
 }

@@ -40,11 +40,11 @@ class BlockNav2 extends StatelessWidget {
                           Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("上门回▶",
+                                Text("上门回 ▶",
                                     style: TextStyle(
                                         fontSize: 13,
                                         color: HexColor("FE2A1F"))),
-                                Text("57类免费上门",
+                                Text("57 类免费上门",
                                     style: TextStyle(
                                         fontSize: 11, color: Colors.grey)),
                               ]),
@@ -59,7 +59,7 @@ class BlockNav2 extends StatelessWidget {
                     ),
                     width: UISize.screenWidth / 4.8,
                     child: Column(children: [
-                      Text("手机寄卖",
+                      Text("手机寄卖 ▶",
                           style: TextStyle(
                               fontSize: 13, color: HexColor("FE8E2D"))),
                       Text("48小时卖掉",
@@ -74,7 +74,7 @@ class BlockNav2 extends StatelessWidget {
                     ),
                     width: UISize.screenWidth / 4.8,
                     child: Column(children: [
-                      Text("淘宝转卖",
+                      Text("淘宝转卖 ▶",
                           style: TextStyle(
                               fontSize: 13, color: HexColor("FEC345"))),
                       Text("一键发布",

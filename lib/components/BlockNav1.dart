@@ -10,7 +10,7 @@ class BlockNav1 extends StatelessWidget {
   Widget build(BuildContext context) {
     UISize().init(context);
     return Container(
-      padding: EdgeInsets.only(left: 4, top: 6, right: 4, bottom: 12),
+      padding: EdgeInsets.all(4),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10), color: Colors.white),
       width: UISize.screenWidth / 1.1,
@@ -57,7 +57,7 @@ class BlockNav1 extends StatelessWidget {
             ],
           ),
           Row(children: [
-            ImagePlaceholder(),
+            ImagePlaceholder(bgColor: "18CAFE", labelTitle: "免中介费"),
             SizedBox(
               width: 10,
               height: 12,
@@ -65,7 +65,7 @@ class BlockNav1 extends StatelessWidget {
                 decoration: BoxDecoration(color: Colors.white),
               ),
             ),
-            ImagePlaceholder(),
+            ImagePlaceholder(bgColor: "12D4A7", labelTitle: "9.9月包邮"),
           ])
         ]),
         Container(
@@ -126,7 +126,7 @@ class BlockNav1 extends StatelessWidget {
             ],
           ),
           Row(children: [
-            ImagePlaceholder(),
+            ImagePlaceholder(bgColor: "FF9218", labelTitle: "原装二手"),
             SizedBox(
               width: 10,
               height: 12,
@@ -134,7 +134,7 @@ class BlockNav1 extends StatelessWidget {
                 decoration: BoxDecoration(color: Colors.white),
               ),
             ),
-            ImagePlaceholder(),
+            ImagePlaceholder(bgColor: "1962CE", labelTitle: "库存样机"),
           ])
         ]),
       ]),

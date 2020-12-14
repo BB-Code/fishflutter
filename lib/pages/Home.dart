@@ -87,6 +87,7 @@ class HomeState extends State<Home> {
               left: UISize.screenWidth / 20,
               child: Container(
                 width: UISize.screenWidth / 1.1,
+                height: UISize.screenHeight / 16,
                 alignment: Alignment.center,
                 child: TextField(
                   decoration: InputDecoration(
@@ -105,7 +106,7 @@ class HomeState extends State<Home> {
               ),
             ),
             Positioned(
-                top: UISize.screenHeight / 4.6,
+                top: UISize.screenHeight / 5,
                 child: SingleChildScrollView(
                     child: Column(
                   children: [HeaderNav(), BlockNav1(), BlockNav2()],
