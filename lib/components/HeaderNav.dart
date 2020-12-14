@@ -9,7 +9,7 @@ class HeaderNav extends StatelessWidget {
   Widget build(BuildContext context) {
     UISize().init(context);
     return Container(
-      margin: EdgeInsets.only(left: 20, right: 20),
+      margin: EdgeInsets.only(left: 20, right: 20, bottom: 10),
       width: UISize.screenWidth / 1.1,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,

@@ -1,4 +1,5 @@
 import 'package:fishflutter/components/BlockNav1.dart';
+import 'package:fishflutter/components/BlockNav2.dart';
 import 'package:fishflutter/components/HeaderNav.dart';
 import 'package:fishflutter/components/Mask.dart';
 import 'package:fishflutter/config/config.dart';
@@ -106,13 +107,9 @@ class HomeState extends State<Home> {
             Positioned(
                 top: UISize.screenHeight / 4.6,
                 child: SingleChildScrollView(
-                  child: HeaderNav(),
-                )),
-            Positioned(
-              top: UISize.screenHeight / 2.9,
-              left: UISize.screenWidth / 22,
-              child: BlockNav1(),
-            ),
+                    child: Column(
+                  children: [HeaderNav(), BlockNav1(), BlockNav2()],
+                ))),
             //登录遮罩
             Positioned(
               top: UISize.screenHeight / 1.18,
