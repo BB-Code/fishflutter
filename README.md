@@ -33,4 +33,4 @@
  <img src="https://github.com/BB-Code/fishflutter/raw/main/assets/images/Screenshot_1608024533.png" width = "450" height = "800" alt="首页" align=center />
  
 
-> 用于学习研究，版权归咸鱼所有，侵权删除
+> 本APP的素材都用于学习研究，版权归咸鱼所有，侵权删除
