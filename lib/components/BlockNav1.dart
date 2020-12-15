@@ -11,9 +11,9 @@ class BlockNav1 extends StatelessWidget {
     UISize().init(context);
     return Container(
       padding: EdgeInsets.all(4),
+      width: UISize.screenWidth / 1.4,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10), color: Colors.white),
-      width: UISize.screenWidth / 1.1,
       child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
         Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Container(

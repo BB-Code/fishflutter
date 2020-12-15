@@ -9,7 +9,6 @@ class BlockNav2 extends StatelessWidget {
     UISize().init(context);
     return Container(
       margin: EdgeInsets.only(top: 10),
-      width: UISize.screenWidth / 1.1,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         color: Colors.white,
