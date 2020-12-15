@@ -22,7 +22,8 @@
 
 > 预览
 
-![首页](assets/images/Screenshot_1608024527.png)
-![首页](assets/images/Screenshot_1608024533.png)
+ <img src="https://github.com/BB-Code/fishflutter/raw/main/assets/images/Screenshot_1608024527.png" width = "150" height = "100" alt="首页" align=center />
+ <img src="https://github.com/BB-Code/fishflutter/raw/main/assets/images/Screenshot_1608024533.png" width = "150" height = "100" alt="首页" align=center />
+ 
 
 > 用于学习研究，版权归咸鱼所有，侵权删除
