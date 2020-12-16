@@ -3,7 +3,7 @@ import 'package:fishflutter/components/BlockNav2.dart';
 import 'package:fishflutter/components/HeaderNav.dart';
 import 'package:fishflutter/config/config.dart';
 import 'package:fishflutter/maps/ImgList.dart';
-import 'package:fishflutter/mock/imgList.dart';
+import 'package:fishflutter/mock/ImgListMock.dart';
 import 'package:fishflutter/utils/UISize.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
