@@ -2,6 +2,11 @@
 
 > :fish: flutter 高仿咸鱼 欢迎 :star:
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=BB-Code/fishflutter&type=Date)](https://star-history.com/#BB-Code/fishflutter&Date)
+
+
 - [x] 搭建架构
 ```
 ─ components 组件
