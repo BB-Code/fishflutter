@@ -25,7 +25,6 @@
 - [x] 首页头部
 - [x] 实现下拉瀑布流
 
-> 持续更新中...
 
 > 标注 
 
@@ -37,6 +36,9 @@
  <img src="https://github.com/BB-Code/fishflutter/raw/main/assets/images/Screenshot_1608024527.png" width = "450" height = "800" alt="首页" align=center />
  <img src="https://github.com/BB-Code/fishflutter/raw/main/assets/images/Screenshot_1608024533.png" width = "450" height = "800" alt="首页" align=center />
  
+ 
+ > 持续更新中...
+ > 
 
 ## Contributors
 
